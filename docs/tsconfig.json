@@ -1,0 +1,29 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "theme/*"
+      ],
+      "@/*": [
+        "../*"
+      ]
+    },
+    "types": [
+      "vite/client",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
+    ]
+  },
+  "include": [
+    "config",
+    "demos", 
+    "pages",
+    "theme",
+    "vite.config.ts",
+    "**/*.ts",
+    "**/*.d.ts", 
+  ]
+}

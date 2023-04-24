@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "../*"
+      ]
+    }
+  },
+  "include": [
+    "components",
+    "utilities",
+    "vite.config.ts",
+    "**/*.ts",
+    "**/*.d.ts"
+  ]
+}
